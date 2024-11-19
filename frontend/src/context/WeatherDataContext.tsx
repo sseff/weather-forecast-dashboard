@@ -42,7 +42,9 @@ export const WeatherDataProvider: React.FC<WeatherDataProviderProps> = ({
   const fetchWeatherData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`/api/weather`); // Fetch all data
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_BASE_URL}/weather`
+      ); // Fetch all data
       setWeatherData(response.data.data);
       setLoading(false);
     } catch (error) {
