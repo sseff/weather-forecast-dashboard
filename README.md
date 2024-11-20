@@ -1,6 +1,6 @@
 # Weather Forecast Dashboard
 
-Welcome to the **Weather Forecast Dashboard**! This application is designed to gather, tag, and visualize weather forecast data for Germany, providing valuable insights for renewable energy operations. Built with TypeScript, Node.js, React.js, and MongoDB, this project showcases a full-stack implementation tailored to meet the requirements of BayWa r.e. Data Services GmbH's technical challenge.
+Welcome to the **Weather Forecast Dashboard**! This application is designed to gather, tag, and visualize weather forecast data for Germany, providing valuable insights for renewable energy operations. Built with TypeScript, Node.js, React.js, and MongoDB.
 
 ## Table of Contents
 
