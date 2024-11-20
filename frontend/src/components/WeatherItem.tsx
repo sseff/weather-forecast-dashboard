@@ -78,7 +78,10 @@ const WeatherItem: React.FC<WeatherItemProps> = ({ data }) => {
     ) {
       const updatedTags = [...data.tags, trimmedTag];
       try {
-        await axios.put(`/api/weather/${data._id}/tags`, { tags: updatedTags });
+        await axios.put(
+          `${process.env.REACT_APP_API_BASE_URL}/weather/${data._id}/tags`,
+          { tags: updatedTags }
+        );
         setNewTag("");
         refreshData(); // Refresh data to ensure consistency
         setSnackbarMessage("Tag added successfully!");
@@ -106,7 +109,10 @@ const WeatherItem: React.FC<WeatherItemProps> = ({ data }) => {
       (tag) => tag.toLowerCase() !== tagToDelete.toLowerCase()
     );
     try {
-      await axios.put(`/api/weather/${data._id}/tags`, { tags: updatedTags });
+      await axios.put(
+        `${process.env.REACT_APP_API_BASE_URL}/weather/${data._id}/tags`,
+        { tags: updatedTags }
+      );
       refreshData(); // Refresh data to ensure consistency
       setSnackbarMessage("Tag deleted successfully!");
       setSnackbarSeverity("success");

@@ -80,7 +80,9 @@ const WeatherList: React.FC = () => {
           params.append("city", cityNames);
         }
 
-        const response = await fetch(`/api/weather?${params.toString()}`);
+        const response = await fetch(
+          `${process.env.REACT_APP_API_BASE_URL}/weather?${params.toString()}`
+        );
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(errorData.error || "Failed to fetch weather data.");
@@ -138,8 +140,11 @@ const WeatherList: React.FC = () => {
   const fetchWeatherDataForCity = async (city: string) => {
     try {
       const response = await fetch(
-        `/api/weather/fetch?city=${encodeURIComponent(city)}`
+        `${
+          process.env.REACT_APP_API_BASE_URL
+        }/weather/fetch?city=${encodeURIComponent(city)}`
       );
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error || "Failed to fetch weather data.");
