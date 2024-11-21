@@ -165,7 +165,7 @@ Before setting up the project locally, ensure you have the following installed:
 ## Usage
 
 1. **Access the Application:**
-   Visit the deployed frontend URL ([https://your-frontend-domain.vercel.app](https://weather-forecast-dashboard-fcgpuyoih-sefika-akmans-projects.vercel.app/)).
+   Visit the deployed frontend URL (https://weather-forecast-dashboard-fcgpuyoih-sefika-akmans-projects.vercel.app/).
 
 2. **Fetch Weather Data:**
 
