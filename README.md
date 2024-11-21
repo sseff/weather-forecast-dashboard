@@ -141,14 +141,8 @@ Before setting up the project locally, ensure you have the following installed:
    ```
 
 3. **Set Environment Variables on Heroku:**
-
-   ```bash
-   heroku config:set MONGO_URI=your_mongodb_atlas_connection_string --app your-backend-app-name
-   heroku config:set WEATHER_API_KEY=your_openweathermap_api_key --app your-backend-app-name
-   heroku config:set FRONTEND_URL=https://your-frontend-domain.com --app your-backend-app-name
-   ```
-
-4. **Deploy to Heroku:**
+4. 
+5. **Deploy to Heroku:**
 
    ```bash
    git add .
@@ -156,7 +150,7 @@ Before setting up the project locally, ensure you have the following installed:
    git push heroku main
    ```
 
-5. **Monitor Deployment Logs:**
+6. **Monitor Deployment Logs:**
    ```bash
    heroku logs --tail --app your-backend-app-name
    ```
@@ -165,13 +159,13 @@ Before setting up the project locally, ensure you have the following installed:
 
 1. Login to Vercel and import your GitHub repository.
 2. Configure environment variables during setup.
-3. Add `REACT_APP_API_BASE_URL` with the value `https://your-backend-app-name.herokuapp.com/api`.
+3. Add `REACT_APP_API_BASE_URL` with the value.
 4. Follow the prompts to complete deployment.
 
 ## Usage
 
 1. **Access the Application:**
-   Visit your deployed frontend URL (e.g., https://your-frontend-domain.vercel.app).
+   Visit the deployed frontend URL ([https://your-frontend-domain.vercel.app](https://weather-forecast-dashboard-fcgpuyoih-sefika-akmans-projects.vercel.app/)).
 
 2. **Fetch Weather Data:**
 
